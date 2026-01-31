@@ -7,30 +7,34 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Product Data ---
+# --- Product Data (Precios en USD - El Salvador 2026) ---
 PRODUCTS = [
     # Frutas
-    {"id": 1, "name": "Manzana Roja", "category": "Frutas", "price": 2500, "unit": "kg", "emoji": "🍎"},
-    {"id": 2, "name": "Banano", "category": "Frutas", "price": 1800, "unit": "kg", "emoji": "🍌"},
-    {"id": 3, "name": "Naranja", "category": "Frutas", "price": 2000, "unit": "kg", "emoji": "🍊"},
-    {"id": 4, "name": "Fresa", "category": "Frutas", "price": 4500, "unit": "lb", "emoji": "🍓"},
-    {"id": 5, "name": "Uva", "category": "Frutas", "price": 5000, "unit": "kg", "emoji": "🍇"},
-    {"id": 6, "name": "Mango", "category": "Frutas", "price": 3000, "unit": "kg", "emoji": "🥭"},
-    {"id": 7, "name": "Piña", "category": "Frutas", "price": 3500, "unit": "unidad", "emoji": "🍍"},
-    {"id": 8, "name": "Sandía", "category": "Frutas", "price": 4000, "unit": "unidad", "emoji": "🍉"},
-    {"id": 9, "name": "Limón", "category": "Frutas", "price": 2200, "unit": "kg", "emoji": "🍋"},
-    {"id": 10, "name": "Papaya", "category": "Frutas", "price": 2800, "unit": "kg", "emoji": "🥭"},
+    {"id": 1, "name": "Manzana Roja", "category": "Frutas", "price": 0.30, "unit": "unidad", "emoji": "🍎"},
+    {"id": 2, "name": "Banano", "category": "Frutas", "price": 0.35, "unit": "lb", "emoji": "🍌"},
+    {"id": 3, "name": "Naranja", "category": "Frutas", "price": 0.25, "unit": "unidad", "emoji": "🍊"},
+    {"id": 4, "name": "Fresa", "category": "Frutas", "price": 2.50, "unit": "lb", "emoji": "🍓"},
+    {"id": 5, "name": "Uva", "category": "Frutas", "price": 2.75, "unit": "lb", "emoji": "🍇"},
+    {"id": 6, "name": "Mango", "category": "Frutas", "price": 0.50, "unit": "unidad", "emoji": "🥭"},
+    {"id": 7, "name": "Piña", "category": "Frutas", "price": 1.75, "unit": "unidad", "emoji": "🍍"},
+    {"id": 8, "name": "Sandía", "category": "Frutas", "price": 3.50, "unit": "unidad", "emoji": "🍉"},
+    {"id": 9, "name": "Limón Pérsico", "category": "Frutas", "price": 0.10, "unit": "unidad", "emoji": "🍋"},
+    {"id": 10, "name": "Papaya", "category": "Frutas", "price": 1.25, "unit": "lb", "emoji": "🥭"},
     # Verduras
-    {"id": 11, "name": "Tomate", "category": "Verduras", "price": 2500, "unit": "kg", "emoji": "🍅"},
-    {"id": 12, "name": "Cebolla", "category": "Verduras", "price": 1500, "unit": "kg", "emoji": "🧅"},
-    {"id": 13, "name": "Zanahoria", "category": "Verduras", "price": 1800, "unit": "kg", "emoji": "🥕"},
-    {"id": 14, "name": "Papa", "category": "Verduras", "price": 1600, "unit": "kg", "emoji": "🥔"},
-    {"id": 15, "name": "Lechuga", "category": "Verduras", "price": 1200, "unit": "unidad", "emoji": "🥬"},
-    {"id": 16, "name": "Pepino", "category": "Verduras", "price": 1400, "unit": "kg", "emoji": "🥒"},
-    {"id": 17, "name": "Pimentón", "category": "Verduras", "price": 3000, "unit": "kg", "emoji": "🫑"},
-    {"id": 18, "name": "Brócoli", "category": "Verduras", "price": 3500, "unit": "kg", "emoji": "🥦"},
-    {"id": 19, "name": "Espinaca", "category": "Verduras", "price": 2000, "unit": "manojo", "emoji": "🥬"},
-    {"id": 20, "name": "Ajo", "category": "Verduras", "price": 8000, "unit": "kg", "emoji": "🧄"},
+    {"id": 11, "name": "Tomate", "category": "Verduras", "price": 0.85, "unit": "lb", "emoji": "🍅"},
+    {"id": 12, "name": "Cebolla", "category": "Verduras", "price": 0.65, "unit": "lb", "emoji": "🧅"},
+    {"id": 13, "name": "Zanahoria", "category": "Verduras", "price": 0.55, "unit": "lb", "emoji": "🥕"},
+    {"id": 14, "name": "Papa", "category": "Verduras", "price": 0.75, "unit": "lb", "emoji": "🥔"},
+    {"id": 15, "name": "Lechuga", "category": "Verduras", "price": 0.50, "unit": "unidad", "emoji": "🥬"},
+    {"id": 16, "name": "Pepino", "category": "Verduras", "price": 0.40, "unit": "unidad", "emoji": "🥒"},
+    {"id": 17, "name": "Chile Verde", "category": "Verduras", "price": 0.90, "unit": "lb", "emoji": "🫑"},
+    {"id": 18, "name": "Brócoli", "category": "Verduras", "price": 1.50, "unit": "lb", "emoji": "🥦"},
+    {"id": 19, "name": "Cilantro", "category": "Verduras", "price": 0.35, "unit": "manojo", "emoji": "🌿"},
+    {"id": 20, "name": "Ajo", "category": "Verduras", "price": 0.25, "unit": "cabeza", "emoji": "🧄"},
+    {"id": 21, "name": "Güisquil", "category": "Verduras", "price": 0.30, "unit": "unidad", "emoji": "🥒"},
+    {"id": 22, "name": "Plátano", "category": "Frutas", "price": 0.55, "unit": "lb", "emoji": "🍌"},
+    {"id": 23, "name": "Aguacate", "category": "Frutas", "price": 0.50, "unit": "unidad", "emoji": "🥑"},
+    {"id": 24, "name": "Repollo", "category": "Verduras", "price": 0.75, "unit": "unidad", "emoji": "🥬"},
 ]
 
 # --- Session State Initialization ---
@@ -41,8 +45,8 @@ if "page" not in st.session_state:
 
 # --- Helper Functions ---
 def format_price(price):
-    """Format price in Colombian pesos"""
-    return f"${price:,}".replace(",", ".")
+    """Format price in US Dollars"""
+    return f"${price:.2f}"
 
 def get_cart_total():
     """Calculate total cart value"""
@@ -97,7 +101,7 @@ def show_landing_page():
     
     with col3:
         st.markdown("### 🚚 Entrega a Domicilio")
-        st.write("Recibe tus productos frescos en la puerta de tu casa. Envío gratis en compras mayores a $50.000.")
+        st.write("Recibe tus productos frescos en la puerta de tu casa. Envío gratis en compras mayores a $15.00.")
     
     st.divider()
     
@@ -129,11 +133,11 @@ def show_landing_page():
     
     prod_cols = st.columns(5)
     sample_products = [
-        ("🍎", "Manzana", "$2.500/kg"),
-        ("🍌", "Banano", "$1.800/kg"),
-        ("🍅", "Tomate", "$2.500/kg"),
-        ("🥕", "Zanahoria", "$1.800/kg"),
-        ("🥬", "Lechuga", "$1.200/und"),
+        ("🍎", "Manzana", "$0.30/und"),
+        ("🍌", "Banano", "$0.35/lb"),
+        ("🍅", "Tomate", "$0.85/lb"),
+        ("🥕", "Zanahoria", "$0.55/lb"),
+        ("🥬", "Lechuga", "$0.50/und"),
     ]
     
     for i, (emoji, name, price) in enumerate(sample_products):
@@ -211,7 +215,7 @@ def show_landing_page():
     # Footer
     st.markdown("""
     <div style='text-align: center; color: gray;'>
-        <p>📍 Calle Principal #123, Centro | 📱 +57 300 123 4567 | ✉️ mercadojusto@email.com</p>
+        <p>📍 Colonia Escalón, San Salvador | 📱 +503 7890-1234 | ✉️ mercadojusto@email.com</p>
         <p>Lunes a Sábado: 6:00 AM - 6:00 PM | Domingos: 6:00 AM - 2:00 PM</p>
     </div>
     """, unsafe_allow_html=True)
@@ -401,7 +405,7 @@ def show_checkout():
         
         payment = st.radio(
             "Método de pago",
-            ["Efectivo contra entrega", "Transferencia bancaria", "Nequi/Daviplata"]
+            ["Efectivo contra entrega", "Transferencia bancaria", "Chivo Wallet / Tigo Money"]
         )
         
         submitted = st.form_submit_button("🛒 Confirmar pedido", type="primary", use_container_width=True)
@@ -440,18 +444,18 @@ def show_contact():
         ### 🏪 Mercado Justo
         
         **Dirección:**  
-        Calle Principal #123, Centro  
-        Ciudad, País
+        Colonia Escalón, Calle La Mascota #123  
+        San Salvador, El Salvador
         
         **Horario:**  
         Lunes a Sábado: 6:00 AM - 6:00 PM  
         Domingos: 6:00 AM - 2:00 PM
         
         **Teléfono:**  
-        📱 +57 300 123 4567
+        📱 +503 7890-1234
         
         **WhatsApp:**  
-        💬 +57 300 123 4567
+        💬 +503 7890-1234
         
         **Email:**  
         ✉️ mercadojusto@email.com
@@ -461,9 +465,9 @@ def show_contact():
         st.markdown("""
         ### 🚚 Entregas a domicilio
         
-        - Entrega gratuita en pedidos mayores a $50.000
+        - Entrega gratuita en pedidos mayores a $15.00
         - Envíos el mismo día para pedidos antes de las 12:00 PM
-        - Cubrimos toda la ciudad y alrededores
+        - Cubrimos San Salvador y municipios cercanos
         
         ### 💬 ¿Tienes preguntas?
         
