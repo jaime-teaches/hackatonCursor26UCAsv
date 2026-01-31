@@ -34,6 +34,52 @@ def show_landing_page():
         if st.button("Login / Get Started 🚀", type="primary"):
             st.session_state.page = "app"
             st.rerun()
+    
+    st.divider()
+    
+    # --- What You Can Create Section ---
+    st.markdown("### 📋 What You Can Create")
+    cols = st.columns(3)
+    with cols[0]:
+        st.markdown("**📧 Professional Emails**")
+        st.caption("Turn casual drafts into polished business emails that get results.")
+    with cols[1]:
+        st.markdown("**💼 LinkedIn Posts**")
+        st.caption("Craft engaging professional content that builds your network.")
+    with cols[2]:
+        st.markdown("**📝 Cover Letters**")
+        st.caption("Make your job applications stand out from the crowd.")
+    
+    st.divider()
+    
+    # --- Choose Your Style Section ---
+    st.markdown("### 🎨 Choose Your Style")
+    t1, t2, t3 = st.columns(3)
+    with t1:
+        st.markdown("🎩 **Professional**")
+        st.caption("Formal, clear, and business-appropriate. Perfect for corporate communication.")
+    with t2:
+        st.markdown("😊 **Friendly**")
+        st.caption("Warm, approachable, and conversational. Great for casual outreach.")
+    with t3:
+        st.markdown("💪 **Persuasive**")
+        st.caption("Compelling, action-oriented, and convincing. Ideal for sales and pitches.")
+    
+    st.divider()
+    
+    # --- Why Writers Love Us Section ---
+    st.markdown("### ❤️ Why Writers Love Us")
+    b1, b2 = st.columns(2)
+    with b1:
+        st.markdown("⚡ **Instant Results**")
+        st.caption("Get polished text in seconds, not hours.")
+        st.markdown("🎯 **No Learning Curve**")
+        st.caption("Just paste your text, pick a tone, and go.")
+    with b2:
+        st.markdown("💰 **Pay As You Go**")
+        st.caption("Affordable credits with no subscription required.")
+        st.markdown("🔒 **Privacy First**")
+        st.caption("Your content is processed securely and never stored.")
 
 def show_main_app():
     # --- Sidebar ---
